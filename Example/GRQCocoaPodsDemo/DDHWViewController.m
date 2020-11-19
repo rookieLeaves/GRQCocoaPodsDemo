@@ -7,7 +7,7 @@
 //
 
 #import "DDHWViewController.h"
-
+#import "DDHWSearchTextField.h"
 @interface DDHWViewController ()
 
 @end
@@ -17,6 +17,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    DDHWSearchTextField *field = [[DDHWSearchTextField alloc]initWithFrame:CGRectMake(100, 100, 200, 36)];
+    field.dd_placeholder = @"哈哈";
+    [self.view addSubview:field];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
